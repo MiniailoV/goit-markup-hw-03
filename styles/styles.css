@@ -62,24 +62,45 @@ img {
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
+
 .nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
+/*FLEX*/
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.nav-list {
+  display: flex;
+}
+.contacts-list {
+  display: flex;
+}
+.header-contacts {
+  margin-left: auto;
+}
+/*FLEX_ENDED*/
 .logo {
+  color: var(--black-font-color);
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  margin-right: 93px;
 }
-.logo,
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 .nav-link {
   color: var(--black-font-color);
-  margin-right: 50px;
 }
 .link {
   text-decoration: none;
@@ -101,11 +122,11 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.header-contacts {
-}
+
 .list {
   list-style: none;
 }
+
 /*--INDEX HTML MAIN*/
 /*pcls-peculiarities, wwd: what-we-do--sections*/
 /*******************HERO*****************/
