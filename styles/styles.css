@@ -55,10 +55,12 @@ img {
   padding: 0 15px;
   outline: 2px solid tomato;
 }
+/*HEADER*/
 .page-header {
   background-color: #ccc;
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .nav {
   font-weight: 500;
@@ -77,6 +79,7 @@ img {
 .logo,
 .nav-link {
   color: var(--black-font-color);
+  margin-right: 50px;
 }
 .link {
   text-decoration: none;
@@ -105,6 +108,7 @@ img {
 }
 /*--INDEX HTML MAIN*/
 /*pcls-peculiarities, wwd: what-we-do--sections*/
+/*******************HERO*****************/
 .hide {
   display: none;
 }
@@ -121,6 +125,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 30px;
 }
 .pcls-section {
   padding-top: 97px;
@@ -147,6 +152,7 @@ img {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  margin-bottom: 50px;
 }
 .team-section {
   padding-top: 94px;
