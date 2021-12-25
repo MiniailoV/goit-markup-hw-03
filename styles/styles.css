@@ -57,12 +57,10 @@ img {
 }
 /*HEADER*/
 .page-header {
-  background-color: #ccc;
   padding-top: 24px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
-
 .nav {
   font-weight: 500;
   font-size: 14px;
@@ -71,8 +69,8 @@ img {
 }
 /*FLEX*/
 .header-container {
-  display: flex;
-  align-items: center;
+  display: flex; /*AHTUNG - БЛОЧНАЯ МОДЕЛЬ*/
+  align-items: center; /*AHTUNG-СТАВИТ ЧЁТКО ПО ЦЕНТРУ*/
 }
 .nav-list {
   display: flex;
@@ -81,7 +79,7 @@ img {
   display: flex;
 }
 .header-contacts {
-  margin-left: auto;
+  margin-left: auto; /*AHTUNG - ПРИБИВАЕТ ВЛЕВО!*/
 }
 /*FLEX_ENDED*/
 .logo {
@@ -94,7 +92,7 @@ img {
   margin-right: 93px;
 }
 .nav-item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 50px; /*AHTUNG - ВСЕ КРОМЕ ПОСЛЕДНЕГО*/
 }
 .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -133,10 +131,12 @@ img {
 .hide {
   display: none;
 }
+/*HERO*/
 .hero {
   background-color: var(--bcg-footer-heroes-color);
-  padding-top: 200px;
-  padding-bottom: 277px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center; /*ВЫРАВНИВАЕТ КНОПКУ ПО ЦЕНТРУ*/
 }
 .hero-title {
   font-weight: 900;
@@ -148,10 +148,10 @@ img {
   color: var(--white-color);
   margin-bottom: 30px;
 }
+
 .pcls-section {
-  padding-top: 97px;
-  padding-bottom: 107px;
-  background-color: darkkhaki;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .pcls-section-title {
   font-size: 14px;
@@ -162,11 +162,23 @@ img {
 .pcls-section-post {
   line-height: 1.71;
   color: var(--grey-color);
+  text-align: left;
+  max-width: 270px;
+}
+.box-pcls-section-title {
+  padding-bottom: 8px;
+}
+.pcls-section-list {
+  display: flex;
+  justify-content: center;
+}
+.pcls-item:not(:last-child) {
+  margin-right: 30px;
+  margin left: auto;
 }
 /*WHAT WE DO SCTN & OUR TEAM*/
 .wwd-section {
-  background-color: darksalmon;
-  padding-bottom: 81px;
+  padding-bottom: 94px;
 }
 .wwd-section-title,
 .team-section-title-head {
@@ -175,6 +187,15 @@ img {
   text-align: center;
   margin-bottom: 50px;
 }
+.wwd-section-list {
+  display: flex;
+  justify-content: center;
+}
+.wwd-item:not(:last-child) {
+  margin-right: 34px;
+}
+
+/*TEAM SECTION*/
 .team-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -188,10 +209,26 @@ img {
   font-size: 16px;
   line-height: 1.18;
   color: var(--grey-color);
+  padding-bottom: 30px;
 }
 .team-section {
   background-color: var(--bcg-ourteam-color);
 }
+.team-section-list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+/*ВЫРАВНИВАНИЕ ТЕКСТА В КАРТОЧКАХ*/
+.box-team-section-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
 /*FOOTER*/
 .footer {
   background-color: var(--bcg-footer-heroes-color);
@@ -211,6 +248,8 @@ img {
 .studio {
   color: var(--white-color);
 }
+/*PORTFOLIO CONTAINER*/
+
 /*BUTTONS*/
 .btn {
   cursor: pointer;
@@ -237,11 +276,25 @@ img {
   font-weight: bold;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  min-width: 200px;
+  min-height: 50px;
 }
 .btn.btn-main:hover {
   background-color: #188ce8;
 }
+/*ВЫРАВНИВАНИЕ КНОПОК ПО ЦЕНТРУ*/
+/*РАЗОБРАТЬСЯ С ЭТИМ*/
 /*PORTFOLIO*/
+.section-pfo-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.pfo-item {
+  border: 1px #eeeeee;
+}
+.pfo-item:not(:last-child) {
+  margin-right: 30px;
+}
 .section-pfo-title {
   color: var(--black-font-color);
   font-size: 18px;
@@ -253,4 +306,20 @@ img {
   font-size: 16px;
   line-height: 30px;
   color: var(--grey-color);
+}
+.section-pfo {
+  margin: 94px 0;
+}
+
+/*КНОПКИ ПОРТФОЛИО*/
+.section-pfo-list-btn {
+  display: flex;
+  justify-content: center;
+  outline: red 1px solid;
+}
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
+.btn-item {
+  padding-bottom: 34px;
 }
