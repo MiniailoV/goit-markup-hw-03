@@ -137,8 +137,8 @@ img {
 /*HERO*/
 .hero {
   background-color: var(--bcg-footer-heroes-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center; /*ВЫРАВНИВАЕТ КНОПКУ ПО ЦЕНТРУ*/
 }
 .hero-title {
