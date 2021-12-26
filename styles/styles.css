@@ -55,10 +55,12 @@ img {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 /*HEADER*/
 .page-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .nav {
@@ -71,8 +73,6 @@ img {
 .header-container {
   display: flex; /*AHTUNG - БЛОЧНАЯ МОДЕЛЬ*/
   align-items: center; /*AHTUNG-СТАВИТ ЧЁТКО ПО ЦЕНТРУ*/
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .nav-list {
   display: flex;
