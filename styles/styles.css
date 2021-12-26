@@ -32,6 +32,8 @@ ul {
 }
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 /* END RESET */
 
@@ -57,8 +59,6 @@ img {
 }
 /*HEADER*/
 .page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 .nav {
@@ -71,6 +71,8 @@ img {
 .header-container {
   display: flex; /*AHTUNG - БЛОЧНАЯ МОДЕЛЬ*/
   align-items: center; /*AHTUNG-СТАВИТ ЧЁТКО ПО ЦЕНТРУ*/
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .nav-list {
   display: flex;
@@ -102,6 +104,7 @@ img {
 }
 .link {
   text-decoration: none;
+  display: block;
 }
 .nav-link:hover,
 .contacts-link:hover,
@@ -174,7 +177,7 @@ img {
 }
 .pcls-item:not(:last-child) {
   margin-right: 30px;
-  margin left: auto;
+  margin-left: auto;
 }
 /*WHAT WE DO SCTN & OUR TEAM*/
 .wwd-section {
@@ -210,6 +213,7 @@ img {
   line-height: 1.18;
   color: var(--grey-color);
   padding-bottom: 30px;
+  padding-top: 10px;
 }
 .team-section {
   background-color: var(--bcg-ourteam-color);
@@ -222,11 +226,19 @@ img {
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 /*ВЫРАВНИВАНИЕ ТЕКСТА В КАРТОЧКАХ*/
-.box-team-section-title {
+.box-team-section-text {
+  background-color: #ffffff;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 10px;
+  border: transparent;
+  border-radius: 0px 0px 4px 4px;
 }
 
 /*FOOTER*/
@@ -247,6 +259,12 @@ img {
 }
 .studio {
   color: var(--white-color);
+}
+.footer-logo {
+  margin-bottom: 20px;
+}
+.address-item:not(:last-child) {
+  padding-bottom: 9px;
 }
 /*PORTFOLIO CONTAINER*/
 
@@ -288,14 +306,22 @@ img {
 .section-pfo-list {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
+  /* margin-left: -30px;
+  margin-bottom: -30px; */
 }
 .pfo-item {
-  
-  margin-bottom: 30px;
+  width: calc(100% / 3 - 30px);
+  /* margin-left: 30px;
+  margin-bottom: 30px; */
+  margin: 15px;
 }
-.pfo-item:not(:last-child) {
+
+/* .pfo-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
-}
+  margin-bottom: 30px;
+} */
+
 .section-pfo-title {
   color: var(--black-font-color);
   font-size: 18px;
@@ -314,16 +340,15 @@ img {
   padding-bottom: 20px;
 }
 .section-pfo {
-  margin: 94px 0;
+  padding: 94px 0;
 }
-.box-section-pfo-post {
-border: 1px solid #eeeeee;
+.box-section-pfo-title {
+  border: 1px solid #eeeeee;
 }
 /*КНОПКИ ПОРТФОЛИО*/
 .section-pfo-list-btn {
   display: flex;
   justify-content: center;
-  outline: red 1px solid;
 }
 .btn-item:not(:last-child) {
   margin-right: 8px;
