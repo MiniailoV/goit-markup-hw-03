@@ -149,27 +149,29 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
 }
-
-.pcls-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.section {
+  padding: 94px 0;
 }
+/*----RESET PADDING OF SECTIONS----*/
+.peculiarities {
+  padding-bottom: 0px;
+}
+/*-----END OF RESET------*/
 .pcls-section-title {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 8px;
 }
 .pcls-section-post {
   line-height: 1.71;
   color: var(--grey-color);
   text-align: left;
   max-width: 270px;
-}
-.box-pcls-section-title {
-  padding-bottom: 8px;
 }
 .pcls-section-list {
   display: flex;
@@ -179,10 +181,7 @@ img {
   margin-right: 30px;
   margin-left: auto;
 }
-/*WHAT WE DO SCTN & OUR TEAM*/
-.wwd-section {
-  padding-bottom: 94px;
-}
+/*------WHAT WE DO SCTN & OUR TEAM-------*/
 .wwd-section-title,
 .team-section-title-head {
   font-size: 36px;
@@ -197,11 +196,9 @@ img {
 .wwd-item:not(:last-child) {
   margin-right: 34px;
 }
-
-/*TEAM SECTION*/
-.team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/*----------TEAM SECTION---------*/
+.team {
+  background-color: var(--bcg-ourteam-color);
 }
 .team-section-title {
   font-weight: 500;
@@ -212,8 +209,7 @@ img {
   font-size: 16px;
   line-height: 1.18;
   color: var(--grey-color);
-  padding-bottom: 30px;
-  padding-top: 10px;
+  margin-top: 10px;
 }
 .team-section {
   background-color: var(--bcg-ourteam-color);
@@ -236,11 +232,10 @@ img {
 .box-team-section-text {
   background-color: #ffffff;
   text-align: center;
-  padding-top: 30px;
+  padding: 30px 0;
   border: transparent;
   border-radius: 0px 0px 4px 4px;
 }
-
 /*FOOTER*/
 .footer {
   background-color: var(--bcg-footer-heroes-color);
@@ -264,10 +259,8 @@ img {
   margin-bottom: 20px;
 }
 .address-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
-/*PORTFOLIO CONTAINER*/
-
 /*BUTTONS*/
 .btn {
   cursor: pointer;
@@ -281,6 +274,7 @@ img {
   border-color: transparent;
   display: inline-block;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 .btn:hover,
 .btn:focus {
@@ -300,8 +294,15 @@ img {
 .btn.btn-main:hover {
   background-color: #188ce8;
 }
-/*ВЫРАВНИВАНИЕ КНОПОК ПО ЦЕНТРУ*/
-/*РАЗОБРАТЬСЯ С ЭТИМ*/
+/*КНОПКИ ПОРТФОЛИО*/
+.section-pfo-list-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.btn-item:not(:last-child) {
+  margin-right: 8px;
+}
 /*PORTFOLIO*/
 .section-pfo-list {
   display: flex;
@@ -316,43 +317,26 @@ img {
   margin-bottom: 30px; */
   margin: 15px;
 }
-
 /* .pfo-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
   margin-bottom: 30px;
 } */
-
 .section-pfo-title {
   color: var(--black-font-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-bottom: 4px;
-  padding-top: 20px;
-  padding-left: 24px;
+  margin-bottom: 4px;
 }
 .section-pfo-post {
   color: var(--black-font-color);
   font-size: 16px;
   line-height: 30px;
   color: var(--grey-color);
-  padding-left: 24px;
-  padding-bottom: 20px;
-}
-.section-pfo {
-  padding: 94px 0;
 }
 .box-section-pfo-title {
-  border: 1px solid #eeeeee;
-}
-/*КНОПКИ ПОРТФОЛИО*/
-.section-pfo-list-btn {
-  display: flex;
-  justify-content: center;
-}
-.btn-item:not(:last-child) {
-  margin-right: 8px;
-}
-.btn-item {
-  padding-bottom: 34px;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  padding: 20px 24px;
 }
